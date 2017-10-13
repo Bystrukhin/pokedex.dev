@@ -1,0 +1,45 @@
+<mat-card class="example-card">
+    <mat-card-content  *ngFor="let item of details">
+            <table>
+                <caption>
+                    <img [alt]="item.name" id="{{item.pkdx_id}}" src="../assets/pokemon_sprites/{{item.pkdx_id}}.png">
+                </caption>
+                <tr>
+                    <th colspan="3">{{item.name}}</th>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td *ngFor="let type of item.types">{{type.name}}</td>
+                </tr>
+                <tr>
+                    <td>Attack</td>
+                    <td colspan="2">{{item.attack}}</td>
+                </tr>
+                <tr>
+                    <td>Defense</td>
+                    <td colspan="2">{{item.defense}}</td>
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td colspan="2">{{item.hp}}</td>
+                </tr>
+                <tr>
+                    <td>SP Attack</td>
+                    <td colspan="2">{{item.sp_atk}}</td>
+                </tr>
+                <tr>
+                    <td>SP Defense</td>
+                    <td colspan="2">{{item.sp_def}}</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td colspan="2">{{item.speed}}</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td colspan="2">{{item.weight}}</td>
+                </tr>
+            </table>
+    </mat-card-content>
+</mat-card>
+

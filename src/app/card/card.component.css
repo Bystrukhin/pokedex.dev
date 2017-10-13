@@ -1,0 +1,27 @@
+.mat-card {
+    margin: 10px;
+}
+
+caption {
+    border: 2px solid black;
+
+}
+
+table {
+    margin: 20px auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+img {
+    width: 250px;
+}
+

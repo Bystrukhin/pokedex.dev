@@ -1,0 +1,21 @@
+<div class="demo-grid-list">
+  <mat-card>
+    <mat-card-title></mat-card-title>
+    <mat-card-content>
+      <mat-grid-list [cols]="3" [gutterSize]="ratioGutter" [style.height]="fitListHeight" [style.width]="fitListWidth">
+        <mat-grid-tile *ngFor="let item of pokemons.objects; let i = index" [style.margin]="margin">
+          <img [alt]="item.name" (click)="addToSelected(item, i)" [class.active]="i == selectedRow" name="{{item.name}}" src="../assets/pokemon_sprites/{{item.pkdx_id}}.png">
+          <mat-grid-tile-footer aria-rowspan="4">
+            <h3 mat-line>{{item.name}}</h3>
+            <span mat-line *ngFor="let type of item.types">{{type.name}}</span>
+            <a>
+              <i mat-line class="material-icons md-36" appFavorite id="{{item.name}}" (click)="addToFavorites(item)">favorite_border</i>
+            </a>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+<button mat-raised-button color="primary" (click)="showDetails()">Load More</button>
+

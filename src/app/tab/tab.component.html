@@ -1,0 +1,22 @@
+<tabset [justified]="true">
+  <tab class="tab-left" heading="All monsters">
+    <div class="wrapper">
+      <div class="left">
+        <app-grid-list></app-grid-list>
+      </div>
+      <div class="right">
+        <app-card class="card"></app-card>
+      </div>
+    </div>
+  </tab>
+  <tab class="tab-right" heading="Selected monsters">
+    <div class="wrapper">
+      <div class="left">
+        <app-selected-grid-list></app-selected-grid-list>
+      </div>
+      <div class="right">
+        <app-selected-card class="card"></app-selected-card>
+      </div>
+    </div>
+  </tab>
+</tabset>

@@ -1,0 +1,36 @@
+.demo-grid-list {
+    margin-top: 20px;
+    width: 600px;
+}
+
+.mat-grid-tile {
+    margin: 16px;
+}
+
+.demo-basic-list .mat-grid-tile {
+    background: rgba(0, 0, 0, 0.32);
+}
+
+img {
+    width: 350px;
+    border: 2px solid black;
+}
+
+.active {
+    border: 6px solid black;
+}
+
+span {
+    display: inline-block;
+}
+
+h3 {
+    margin: 0 auto;
+}
+
+.mat-raised-button {
+    margin: 20px;
+    width: 600px;
+    height: 50px;
+}
+
